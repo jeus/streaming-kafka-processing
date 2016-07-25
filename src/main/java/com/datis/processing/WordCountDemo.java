@@ -68,7 +68,7 @@ public class WordCountDemo {
 
         // need to override value serde to Long type
         counts.print();
-        counts.to(Serdes.String(), Serdes.Long(), "cw1");
+        counts.to(Serdes.String(), Serdes.Long(), "step2");
 
         KafkaStreams streams = new KafkaStreams(builder, props);
         streams.start();
