@@ -5,14 +5,6 @@
  */
 package com.datis.region;
 
-//import com.datis.irc.entity.UserMessages;
-//import com.datis.irc.pojo.JsonPOJODeserializer;
-//import com.datis.irc.pojo.JsonPOJOSerializer;
-//import java.util.Arrays;
-//import java.util.HashMap;
-//import java.util.List;
-//import java.util.Locale;
-//import java.util.Map;
 import com.datis.irc.pojo.JsonPOJODeserializer;
 import com.datis.irc.pojo.JsonPOJOSerializer;
 import java.util.HashMap;
@@ -20,12 +12,9 @@ import java.util.Map;
 import java.util.Properties;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.Deserializer;
-//import org.apache.kafka.common.serialization.Deserializer;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.common.serialization.Serializer;
-//import org.apache.kafka.common.serialization.Serializer;
-//import org.apache.kafka.common.utils.Time;
 import org.apache.kafka.streams.KafkaStreams;
 import org.apache.kafka.streams.KeyValue;
 import org.apache.kafka.streams.StreamsConfig;
