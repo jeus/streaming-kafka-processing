@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.datis.region;
+package com.datis.region.top;
 
 //import com.datis.irc.entity.UserMessages;
 //import com.datis.irc.pojo.JsonPOJODeserializer;
@@ -41,7 +41,7 @@ import org.apache.kafka.streams.state.KeyValueStore;
  *
  * @author jeus
  */
-public class RegionCountWindowing {
+public class TopRegionWindowing {
 
     static public class WindowedPageViewByRegion {
 
@@ -62,7 +62,7 @@ public class RegionCountWindowing {
 
     public static void main(String[] arg) throws Exception {
         Properties props = new Properties();
-        props.put(StreamsConfig.APPLICATION_ID_CONFIG, "regionWindowing");
+        props.put(StreamsConfig.APPLICATION_ID_CONFIG, "topRegionWindowing");
         props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "172.17.0.13:9092");
         props.put(StreamsConfig.ZOOKEEPER_CONNECT_CONFIG, "172.17.0.11:2181");
         props.put(StreamsConfig.KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass().getName());
